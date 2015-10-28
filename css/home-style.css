@@ -1,6 +1,27 @@
-.cor1{background-color: #c3f3c3;}
-.cor2{background-color: #f1f1c1;}
-.cor3{background-color: #c2c2c2;}
+/*=================== Nav ===================*/
+.teste{
+color: red;
+font-family: Roboto Black;
+font-size: 20px;
+
+
+/* Safari */
+-webkit-transform: rotate(-6deg);
+
+/* Opera */
+-o-transform: rotate(-6deg);
+ 
+/* Firefox */
+-moz-transform: rotate(-6deg);
+ 
+/* Internet Explorer */
+}
+
+
+/*=================== Fim ===================*/
+
+
+
 footer {
 	background-color: #101010;
 	padding: 30px;
@@ -56,15 +77,4 @@ footer {
 	padding: 10px;
 	text-align: justify;
 	
-}
-ul {
-  padding:0 0 0 0;
-  margin:0 0 0 0;
-}
-ul li {
-  list-style:none;
-  margin-bottom:25px;
-}
-ul li img {
-  cursor: pointer;
 }

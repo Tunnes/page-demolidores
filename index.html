@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 	<meta charset="UTF-8"/>
 	<meta name="description" content="Demolidores Mc"/>
-	<!-- MetaTag do Frame-Work para responsividade -->
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
 	<title>Demolidores Mc</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- Importando bibliotecas MaxCDN Bootstrap -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<!-- Importando folha css externa-->
+	<link rel="stylesheet" href="css/home-style.css">
 
 </head>
 <body>
 
 	<!-- 0BACAC - NAS FOTOS Navbar fixo no topo da pagina e com uma redundancia gritante que me irrita-->
-	<nav class=" navbar navbar-inverse navbar-fixed-top" >
-		<div class="container-fluid active">
-			<div class="navbar-header ">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span> 
-      			</button>
-				<a class="navbar-brand " href="#">Demolidores</a>
-			</div>
-			<div class="collapse e" >
-				<ul class="nav navbar-nav ">
-				    <li class="active"><a href="#">Principal</a></li>
-				    <li><a href="#">Eventos</a></li>
-				    <li><a href="#">Galeria</a></li>
-				    <li><a href="#">Nossa História</a></li>
-				    <li><a href="#">Localização</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Demolidores</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Principal</a></li>
+		<li><a class="teste" href="#">Eventos</a></li>
+		<li><a class="teste" href="#">Galeria</a></li>
+		<li><a class="teste" href="#">Nossa História</a></li>
+		<li><a class="teste" href="#">Localização</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 	<!-- Navbar fixo no topo da pagina e com uma redundancia gritante que me irrita-->
 
 	<!-- Header demolidores -->
@@ -86,13 +90,13 @@
 			
 			<div class="col-sm-3 col-md-offset-0 "> 
 				<h2 class="seila" >VIAGENS</h2>
-				<img src="img/tank.png" class="img-responsive img-circle" alt="...">
+				<img src="img/tank.png" class="img-responsive img-" alt="...">
 				
         	</div>
 			
 			<div class="col-sm-3 col-md-offset-0 ">
 				<h2 class="seila" >SHOWS</h2>
-				<img src="img/show.png" class="img-responsive img-circle" alt="...">
+				<img src="img/show.png" class="img-responsive img-" alt="...">
         	</div>
 
         </div>
