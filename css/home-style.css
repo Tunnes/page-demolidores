@@ -73,56 +73,37 @@ header
 
 header div h1 { font-size: 90px; }
 
-/*================= Media Queries ==================*/
-@media (min-aspect-ratio: 16/9){
-  .h-video { height: 300%; top: -100%;}
-}
 
-@media (max-aspect-ratio: 16/9) {
-  .h-video { width: 300%; left: -100%;}
-}
-
-@media (max-width: 767px) {	
- header div h1 { font-size: 60px; }
- header div h2 { font-size: 25px; }
- .h-mensagen{ margin-top: 25%; }
-}
-/*=================================================*/
 /*=================== Main-In =====================*/
+
+
+
+
 
 .espaco-sup { margin-top:20px; }
 .espaco-fot { margin-top:40px; }
 .esp{ margin-bottom: 10px;}
 .cor1, .cor2{ padding: 8px;}
 
-.home-first-p
-{
-	text-align: justify;
-	
-}
 *{ font-family: Roboto;}
 
 .h2-lema
 { 
-	font-size: 55px;
+	font-size: 65px;
 	font-family: Roboto Black;
 	margin-bottom: 0px;
 }
-/*=================================================*/
-	
-
-footer {
-	background-color: #101010;
-	padding: 30px;
-	margin-top:50px; 
-}
 p{
+	text-align: justify;
+	font-size: 14px;
+	/*
+	Usabilidade e boas práticas..
 	line-height: 1.9em;
 	font-weight: 600;
-	font-size: 16px;
+	*/
 }
 
-.section-lema
+.contraste
 { 
 	font-size: 55px;
 	color: white;
@@ -131,9 +112,10 @@ p{
 	background-color: #8f3e3e;
 	padding-right: 7%;
 	margin-bottom: 2%;
+	margin-top: 0px;
 
 }
-.seila
+.contraste-b
 { 
 	font-size: 50px;
 	color: white;
@@ -150,8 +132,39 @@ p{
 	text-align: justify;
 	
 }
-body{
-	overflow-x: hidden;
-	
+
+/*=================================================*/
+body{ overflow-x: hidden; }
+
+footer 
+{
+	background-color: #101010;
+	padding: 30px;
+	margin-top:50px; 
 }
+/*================= Media Queries ==================*/
+@media (min-aspect-ratio: 16/9){
+  .h-video { height: 300%; top: -100%;}
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .h-video { width: 300%; left: -100%;}
+}
+
+@media (max-width: 768px) {	
+ 	header div h1 	{ font-size: 57px; 	}
+ 	header div h2 	{ font-size: 25px; 	}
+ 	.h-mensagen		{ margin-top: 35%;	}
+
+
+}
+@media (max-width: 991px) {
+	.img-circle		{ border-radius: 20px; width: 100%;}
+	.monstro		{ font-size: 35px; margin-top: 5%;}
+	.h2-lema		{ font-size: 55px;}	
+	.contraste		{ font-size: 40px;}
+	.contraste-b	{ font-size: 40px;}
+	.et 			{ margin-top: 10%;}
+}
+/*=================================================*/
 
