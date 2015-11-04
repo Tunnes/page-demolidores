@@ -1,110 +1,77 @@
 /*=================== Nav-In ======================*/
-.navbar
-{ 
-	font-size: 12px;
+.navbar{
+ 	font-size: 12px;
 	margin-bottom: 10px;
-	border-style: none;
-}
-.navbar-brand
-{ 
-	font-weight: 800;
-}
-header
-{
-	margin-top: 30px;
-	margin-bottom: 20px;
-}
-.m-artigo{
-	margin-top: 4%;
-}
+	border-style: none;}
+
+header{
+ 	margin-top: 30px;
+ 	margin-bottom: 20px;}
+
+.navbar-brand{ 	
+	font-weight: 800;}
+
 /*================== Header-In ====================*/
-.h-mensagen
-{
-	margin-top: 15%;
-	position: absolute;
+.h-mensagen{	
 	z-index: +10;
 	color: white;
+	margin-top: 15%;
+	position: absolute;
 	text-align: center;
-	font-family: Roboto Black;
-}
-.h-background
-{ 
-	top: 0; 
+	font-family: Roboto Black;}
+
+.h-background{ 	
+	top: 0;  
+	left: 0;
 	right: 0; 
-	bottom: 0; 
-	left: 0; 
-}
-.h-video
-{  
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; 
-}
+	bottom: 0;}
 
-
-
-.btn{ padding: 0px;}
+.h-video{  	
+	top: 0;
+	left: 0;
+  	width: 100%;
+  	height: 100%;}
 
 .btn-circle{
-
-    width: 60px;
-    height: 60px;
-    margin-top: 15px;
-    border: 2px solid #fff;
-    border-radius: 100%;
+   	width: 60px;
     color: #fff;
+    height: 60px;
     background: 0 0;
-}
+    margin-top: 15px;
+    border-radius: 100%;
+    border: 2px solid #fff;}
 
-.glyphicon{
+.glyphicon{	
 	margin: 0 auto;
 	display: block;
 	font-size: 20px;
-	line-height: 0.4;
-	
-}
-.vish{
+	line-height: 0.4;}
+
+.vish{	
 	vertical-align: middle;
 	margin-top: 18px;
-	margin-left: auto; 
-}
+	margin-left: auto;}
 
+.btn{ 
+	padding: 0px;}
 
-header div h1 { font-size: 90px; }
+header div h1 { 
+	font-size: 90px; }
 
 
 /*=================== Main-In =====================*/
 
-
-
-
-
-.espaco-sup { margin-top:20px; }
-.espaco-fot { margin-top:40px; }
-.esp{ margin-bottom: 10px;}
-.cor1, .cor2{ padding: 8px;}
-
-*{ font-family: Roboto;}
-
-.h2-lema
-{ 
+.h2-lema-a{ 
 	font-size: 65px;
 	font-family: Roboto Black;
-	margin-bottom: 0px;
-}
-p{
-	text-align: justify;
-	font-size: 14px;
-	/*
-	Usabilidade e boas práticas..
-	line-height: 1.9em;
-	font-weight: 600;
-	*/
-}
+	margin-bottom: 0px;}
 
-.contraste
-{ 
+.h2-lema-b{ 
+	font-size: 65px;
+	font-family: Roboto Black;
+	}
+
+.contraste-a{ 
 	font-size: 55px;
 	color: white;
 	text-align: right;
@@ -112,36 +79,62 @@ p{
 	background-color: #8f3e3e;
 	padding-right: 7%;
 	margin-bottom: 2%;
-	margin-top: 0px;
+	margin-top: 0px;}
 
-}
-.contraste-b
-{ 
-	font-size: 50px;
+.contraste-b{ 
+	font-size: 40px;
 	color: white;
 	text-align: center;
 	font-family: Roboto Black;
 	background-color: #8f3e3e;
-	padding:2%;
-	margin-bottom: 2%;
-
-}
-.bloco-footer
-{
-	padding: 10px;
-	text-align: justify;
+	padding-right: 7%;
 	
-}
+	margin-top: 0px;}
+
+p{	
+	text-align: justify;
+	font-size: 14px;}
+
+body{ 
+	overflow-x: hidden;}
+
+*{ 
+	font-family: Roboto;}
 
 /*=================================================*/
-body{ overflow-x: hidden; }
-
-footer 
-{
+/*====================== Footer ====================*/
+footer{	
 	background-color: #101010;
 	padding: 30px;
-	margin-top:50px; 
-}
+	margin-top:50px;}
+
+footer p{
+	font-size:12px;
+	text-align: justify;}
+
+
+.icones{
+	margin-top:1.7em;}
+
+.icones i{
+	width:35px;
+	height:35px;
+	background:url('../img/img-sprite.png') no-repeat 0px 0px;
+	display:inline-block;}
+
+i.twitter{
+	background-position:0px 0px;}
+
+i.facebook{
+	background-position:-35px 0px;}
+
+i.twitter:hover{
+	background-position:0px -35px;}
+
+i.facebook:hover{
+	background-position:-35px -35px;}
+
+/*==================================================*/
 /*================= Media Queries ==================*/
 @media (min-aspect-ratio: 16/9){
   .h-video { height: 300%; top: -100%;}
@@ -156,15 +149,13 @@ footer
  	header div h2 	{ font-size: 25px; 	}
  	.h-mensagen		{ margin-top: 35%;	}
 
-
 }
 @media (max-width: 991px) {
-	.img-circle		{ border-radius: 20px; width: 100%;}
-	.monstro		{ font-size: 35px; margin-top: 5%;}
-	.h2-lema		{ font-size: 55px;}	
-	.contraste		{ font-size: 40px;}
-	.contraste-b	{ font-size: 40px;}
-	.et 			{ margin-top: 10%;}
+	.img-circle		{ border-radius: 20px; width: 100%;	}
+	.h2-lema-a		{ font-size: 55px;	}
+	.h2-lema-b		{ font-size: 40px; 	}
+	.contraste-a	{ font-size: 40px;	}
+	.contraste-b	{ font-size: 40px;	}
 }
 /*=================================================*/
 
