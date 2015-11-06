@@ -21,8 +21,8 @@ main ul li{
             
   }
 
-
-
+.hoverzoom{ margin: 0px; border-radius: 0px;}
+.thumbnail{ padding: 2px;}
 .contraste-b{ 
 	font-size: 24px;
 	color: white;
@@ -32,24 +32,38 @@ main ul li{
 	margin-bottom: 0px;
 	
 	margin-top: 0px;}
-.col-md-12{ padding: 0px; margin: 0px}
-.col-md-2{ padding: 0px; margin: 0px}
-.col-md-9{ padding: 0px; margin: 0px}
-.h2-lema-a{ 
+.row{ padding: 0px; margin: 0px}
+
+.contraste-b{ 
 	font-size: 70px;
-	font-family: Roboto Black;
-	margin-bottom: 0px;}
-.contraste-a{ 
-	font-size: 90px;
 	color: white;
-	text-align: right;
+	text-align: left;
 	font-family: Roboto Black;
 	background-color: #8f3e3e;
-	padding-right: 7%;
+	padding-left: 3%;
+	
+	margin-top: 0px;}
+.contraste-a{ 
+	font-size: 80px;
+	color: white;
+	text-align: left;
+	font-family: Roboto Black;
+	background-color: #8f3e3e;
+	padding-left: 3%;
 	margin: 0px;
 	margin-left: 0px;
 	margin-top: 0px;}
 
+
+img.desaturate { 
+	-webkit-filter: grayscale(30%)  invert(.2);
+	filter: grayscale(100%);
+}
+.col-lg-2{padding: 0.5px; margin: 0px;}
+.col-lg-6{padding: 0px; margin: 0px;}
+.col-lg-4{padding: 0.5px; margin: 0px;}
+.col-lg-8{padding: 0px; margin: 0px;}
+.col-lg-12{padding: 0px; margin: 0px;}
 .teste{}
 
 	.teste:hover{ display: none;}
@@ -109,6 +123,40 @@ color: #fff;
 letter-spacing: 0.4px;
 margin-top: 80%;
 text-align: center;
-padding: 10px 15px;
-vertical-align: middle;
+padding: 8% 20px;
+
 }
+/*=================================================*/
+/*====================== Footer ====================*/
+footer{	
+	background-color: #101010;
+	padding: 30px;
+	margin-top:50px;}
+
+footer p{
+	font-size:12px;
+	text-align: justify;}
+
+
+.icones{
+	margin-top:1.7em;}
+
+.icones i{
+	width:35px;
+	height:35px;
+	background:url('../img/img-sprite.png') no-repeat 0px 0px;
+	display:inline-block;}
+
+i.twitter{
+	background-position:0px 0px;}
+
+i.facebook{
+	background-position:-35px 0px;}
+
+i.twitter:hover{
+	background-position:0px -35px;}
+
+i.facebook:hover{
+	background-position:-35px -35px;}
+
+/*==================================================*/
