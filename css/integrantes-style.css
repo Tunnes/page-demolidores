@@ -1,0 +1,114 @@
+/*=================== Nav-In ======================*/
+.navbar{
+ 	font-size: 12px;
+	margin-bottom: 10px;
+	border-style: none;}
+
+header{
+ 	margin-top: 30px;
+ 	margin-bottom: 20px;}
+
+.navbar-brand{ 	
+	font-weight: 800;}
+
+/*=================== Main-In ======================*/
+main{
+	margin-top: 8%;}
+
+
+main ul li{     
+  list-style:none;
+            
+  }
+
+
+
+.contraste-b{ 
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	font-family: Roboto Black;
+	background-color: #8f3e3e;
+	margin-bottom: 0px;
+	
+	margin-top: 0px;}
+.col-md-12{ padding: 0px; margin: 0px}
+.col-md-2{ padding: 0px; margin: 0px}
+.col-md-9{ padding: 0px; margin: 0px}
+.h2-lema-a{ 
+	font-size: 70px;
+	font-family: Roboto Black;
+	margin-bottom: 0px;}
+.contraste-a{ 
+	font-size: 90px;
+	color: white;
+	text-align: right;
+	font-family: Roboto Black;
+	background-color: #8f3e3e;
+	padding-right: 7%;
+	margin: 0px;
+	margin-left: 0px;
+	margin-top: 0px;}
+
+.teste{}
+
+	.teste:hover{ display: none;}
+
+.hoverzoom {
+position: relative;
+width: 350;
+overflow: hidden;
+}
+.hoverzoom > img {
+width: 100%; 
+border-radius: 2px;
+-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover > img {
+-webkit-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-ms-transform: scale(1.5);
+-o-transform: scale(1.5);
+transform: scale(1.5);
+}
+.hoverzoom .retina{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;    
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);    
+vertical-align: middle;
+text-align: center;
+
+-webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+opacity: 1;
+box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+}
+.hoverzoom .retina p {
+color: #fff;
+}
+.hoverzoom .retina span {
+display: inline-block;
+width: 100%;
+height: 20%;
+background: #8f3e3e;
+font-family: Roboto Black;
+color: #fff;
+letter-spacing: 0.4px;
+margin-top: 80%;
+text-align: center;
+padding: 10px 15px;
+vertical-align: middle;
+}
