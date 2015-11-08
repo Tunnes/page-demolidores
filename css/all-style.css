@@ -1,0 +1,312 @@
+/*=============================== Nav-In ==============================*/
+.navbar{
+ 	font-size: 12px;
+	margin-bottom: 10px;
+	border-style: none;
+}
+header{
+ 	margin-top: 30px;
+ 	margin-bottom: 20px;
+}
+.navbar-brand{ 	
+	font-weight: 800;
+}
+/*=============================== Footer ==============================*/
+/*=====================================================================*/
+footer{	
+	background-color: #101010;
+	padding: 30px;
+	margin-top:50px;
+}
+footer p{
+	font-size:12px;
+	text-align: justify;
+}
+.icones{
+	margin-top:1.7em;
+}
+.icones i{
+	width:35px;
+	height:35px;
+	background:url('../img/img-sprite.png') no-repeat 0px 0px;
+	display:inline-block;
+}
+i.twitter{
+	background-position:0px 0px;
+}
+i.facebook{
+	background-position:-35px 0px;
+}
+i.twitter:hover{
+	background-position:0px -35px;
+}
+i.facebook:hover{
+	background-position:-35px -35px;
+}
+/*========================= Publicações-Eventos =======================*/
+/*=====================================================================*/
+.page-publicacoes header{
+	margin-bottom: 0px;
+}
+.page-publicacoes header{
+	padding-top: 8%;
+    width: 100%;
+    height: 400px;
+    background-image: url('../img/header.png');
+    background-size: 100% 100%;
+}
+.page-publicacoes .h-mensgem{	
+	color: white;
+	margin-top: 3% auto;
+	text-align: center;
+	font-family: Roboto Black;
+}
+.page-publicacoes header h2{ font-size: 70px;}
+.page-publicacoes header h3{ font-size: 30px;}
+
+@media (max-width: 768px){
+	.page-publicacoes header { background-size:cover;}
+	.page-publicacoes header h2{ font-size: 55px;}
+	.page-publicacoes header h3{ font-size: 30px;}
+}
+/*=====================================================================*/
+.page-publicacoes main{
+	margin-top: 5%;
+}
+.page-publicacoes main div div h1{
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	font-family: Roboto Black;
+	background-color: #8f3e3e;
+	padding: 1%;
+}
+/*=====================================================================*/
+.post span{	
+	display: block;
+}
+.post time + span, time{
+	font-size: 12px;
+	text-align: left;
+}
+.post img{
+	padding:2%;
+	border-radius: 3.5%;
+}
+.post h3{
+	margin-top: 0px;
+	font-weight: bold;
+	font-family: Roboto Black;
+}
+.post .p-summary{ 
+	text-align: justify; 
+}
+.page-publicacoes .thumbnail{
+	border-width: 1.5px;
+}
+/*=====================================================================*/
+/*============================== Principal ============================*/
+/*=====================================================================*/
+
+.page-principal header .glyphicon{	
+	margin: 0 auto;
+	display: block;
+	font-size: 20px;
+	line-height: 0.4;
+}
+.page-principal header div h1{ 
+	font-size: 90px; 
+}
+
+.page-principal header{
+ 	margin-top: 30px;
+ 	margin-bottom: 20px;
+ }
+ .page-principal header div{	
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0;	  
+}
+
+.page-principal header video{ 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+}
+
+.h-mensagem{	
+	z-index: +10;
+	color: white;
+	margin-top: 15%;
+	position: absolute;
+	text-align: center;
+	font-family: Roboto Black;
+}
+.h-buttom{
+   	width: 60px;
+    color: #fff;
+    height: 60px;
+    background: 0 0;
+    margin-top: 15px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+	padding: 0px;
+}
+.h-buttom-space{	
+	vertical-align: middle;
+	margin-top: 18px;
+}
+/*=====================================================================*/
+.h2-lema-a{ 
+	font-size: 65px;
+	font-family: Roboto Black;
+	margin-bottom: 0px;
+}
+ .h2-lema-a < p{ 
+	font-size: 25px;
+	font-family: ;
+}
+.contraste-a{ 
+	font-size: 55px;
+	color: white;
+	text-align: right;
+	font-family: Roboto Black;
+	background-color: #8f3e3e;
+	padding-right: 7%;
+	margin-bottom: 2%;
+	margin-top: 0px;
+}
+.contraste-b{ 
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	font-family: Roboto Black;
+	background-color: #8f3e3e;
+	padding-right: 7%;
+	margin-top: 0px;
+}
+.page-principal p{	
+	text-align: justify;
+	font-size: 14px;
+}
+.page-principal body{ 
+	overflow-x: hidden;}
+
+*{ 
+	font-family: Roboto;}
+
+/*=====================================================================*/
+@media (min-aspect-ratio: 16/9){
+  .page-principal header video { height: 300%; top: -100%;}
+}
+@media (max-aspect-ratio: 16/9) {
+  .page-principal header video { width: 300%; left: -100%;}
+}
+@media (max-width: 768px) {	
+ 	.page-principal header div h1 	{ font-size: 57px; 	}
+ 	.page-principal header div h2 	{ font-size: 25px; 	}
+ 	.h-mensagen		{ margin-top: 35%;	}
+}
+@media (max-width: 991px) {
+	.img-circle		{ border-radius: 20px; width: 100%;	}
+	.h2-lema-a		{ font-size: 45px;	}
+	.h2-lema-b		{ font-size: 40px; 	}
+	.contraste-a	{ font-size: 40px;	}
+	.contraste-b	{ font-size: 40px;	}
+}
+/*=====================================================================*/
+/*=========================== page-integrantes ========================*/
+/*=====================================================================*/
+.page-integrantes main{
+	margin-top: 8%;
+}
+.page-integrantes main ul li{     
+  list-style:none;            
+}
+.hoverzoom{ margin: 0px; border-radius: 0px;}
+.page-integrantes .row{ padding: 0px; margin: 0px}
+.page-integrantes .contraste-b{ 
+	font-size: 70px;
+	color: white;
+	text-align: left;
+	font-family: Roboto Black;
+	background-color: #8f3e3e;
+	padding-left: 3%;
+	margin-bottom:0px; 
+	margin-top: 0px;
+}
+.page-integrantes .contraste-a{ 
+	font-size: 80px;
+	color: white;
+	text-align: left;
+	font-family: Roboto Black;
+	background-color: #8f3e3e;
+	padding-left: 3%;
+	margin: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
+img.desaturate { 
+	-webkit-filter: grayscale(30%)  invert(.2);
+	filter: grayscale(100%);
+}
+.page-integrantes .col-lg-4, .col-lg-2{padding: 0.5px; margin: 0px;}
+.page-integrantes .col-lg-8, .col-lg-12{padding: 0px; margin: 0px;}
+.hoverzoom{
+	position: relative;
+	width: 350;
+	overflow: hidden;
+}
+.hoverzoom > img {
+	width: 100%; 
+	border-radius: 2px;
+	-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	-moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	-ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	-o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover > img {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+.hoverzoom .retina{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;    
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);    
+	vertical-align: middle;
+	text-align: center;
+	-webkit-transition:	 all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	-moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	-ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	-o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+	transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+	opacity: 1;
+	box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+}
+.hoverzoom .retina p {
+	color: #fff;
+}
+.hoverzoom .retina span {
+	display: inline-block;
+	width: 100%;
+	height: 20%;
+	background: #8f3e3e;
+	font-family: Roboto Black;
+	color: #fff;
+	letter-spacing: 0.4px;
+	margin-top: 80%;
+	text-align: center;
+	padding: 8% 20px;
+}
