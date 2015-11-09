@@ -1,18 +1,14 @@
-/*=============================== Nav-In ==============================*/
-.navbar{
- 	font-size: 12px;
-	margin-bottom: 10px;
-	border-style: none;
+/*=============================== General Comps ==========================*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900,300);
+
+*{	
+	font-family: 'Roboto', sans-serif; 
 }
+
 header{
  	margin-top: 30px;
  	margin-bottom: 20px;
 }
-.navbar-brand{ 	
-	font-weight: 800;
-}
-/*=============================== Footer ==============================*/
-/*=====================================================================*/
 footer{	
 	background-color: #101010;
 	padding: 30px;
@@ -22,6 +18,24 @@ footer p{
 	font-size:12px;
 	text-align: justify;
 }
+.contraste{
+	color: white;
+	font-weight: 900;
+	background-color: #8f3e3e;
+	margin-top: 0px;
+}
+/*=============================== Nav-In ==============================*/
+.navbar{
+ 	font-size: 12px;
+	margin-bottom: 10px;
+	border-style: none;
+}
+
+.navbar-brand{ 	
+	font-weight: 800;
+}
+/*=============================== Icones ==============================*/
+/*=====================================================================*/
 .icones{
 	margin-top:1.7em;
 }
@@ -59,7 +73,7 @@ i.facebook:hover{
 	color: white;
 	margin-top: 3% auto;
 	text-align: center;
-	font-family: Roboto Black;
+	font-weight: 900;
 }
 .page-publicacoes header h2{ font-size: 70px;}
 .page-publicacoes header h3{ font-size: 30px;}
@@ -77,7 +91,7 @@ i.facebook:hover{
 	font-size: 40px;
 	color: white;
 	text-align: center;
-	font-family: Roboto Black;
+	font-weight: 900;
 	background-color: #8f3e3e;
 	padding: 1%;
 }
@@ -95,8 +109,7 @@ i.facebook:hover{
 }
 .post h3{
 	margin-top: 0px;
-	font-weight: bold;
-	font-family: Roboto Black;
+	font-weight: 900;
 }
 .post .p-summary{ 
 	text-align: justify; 
@@ -114,8 +127,12 @@ i.facebook:hover{
 	font-size: 20px;
 	line-height: 0.4;
 }
+.page-principal header div h2{
+	font-weight: 900;
+}
 .page-principal header div h1{ 
 	font-size: 90px; 
+	font-weight: 900;	
 }
 
 .page-principal header{
@@ -136,13 +153,13 @@ i.facebook:hover{
 	height: 100%;
 }
 
-.h-mensagem{	
+ .h-mensagem{	
 	z-index: +10;
 	color: white;
 	margin-top: 15%;
 	position: absolute;
 	text-align: center;
-	font-family: Roboto Black;
+	font-weight: 900;
 }
 .h-buttom{
    	width: 60px;
@@ -161,31 +178,22 @@ i.facebook:hover{
 /*=====================================================================*/
 .h2-lema-a{ 
 	font-size: 65px;
-	font-family: Roboto Black;
+	font-weight: 900;
 	margin-bottom: 0px;
 }
  .h2-lema-a < p{ 
 	font-size: 25px;
-	font-family: ;
 }
-.contraste-a{ 
+.page-principal .contraste-a{
 	font-size: 55px;
-	color: white;
 	text-align: right;
-	font-family: Roboto Black;
-	background-color: #8f3e3e;
 	padding-right: 7%;
 	margin-bottom: 2%;
-	margin-top: 0px;
 }
-.contraste-b{ 
+.page-principal .contraste-b{
 	font-size: 40px;
-	color: white;
 	text-align: center;
-	font-family: Roboto Black;
-	background-color: #8f3e3e;
 	padding-right: 7%;
-	margin-top: 0px;
 }
 .page-principal p{	
 	text-align: justify;
@@ -193,9 +201,6 @@ i.facebook:hover{
 }
 .page-principal body{ 
 	overflow-x: hidden;}
-
-*{ 
-	font-family: Roboto;}
 
 /*=====================================================================*/
 @media (min-aspect-ratio: 16/9){
@@ -207,14 +212,14 @@ i.facebook:hover{
 @media (max-width: 768px) {	
  	.page-principal header div h1 	{ font-size: 57px; 	}
  	.page-principal header div h2 	{ font-size: 25px; 	}
- 	.h-mensagen		{ margin-top: 35%;	}
+ 	.page-principal .h-mensagen		{ margin-top: 35%;	}
 }
 @media (max-width: 991px) {
-	.img-circle		{ border-radius: 20px; width: 100%;	}
-	.h2-lema-a		{ font-size: 45px;	}
-	.h2-lema-b		{ font-size: 40px; 	}
-	.contraste-a	{ font-size: 40px;	}
-	.contraste-b	{ font-size: 40px;	}
+	.page-principal .img-circle		{ border-radius: 20px; width: 100%;	}
+	.page-principal .h2-lema-a		{ font-size: 45px;	}
+	.page-principal .h2-lema-b		{ font-size: 40px; 	}
+	.page-principal .contraste-a	{ font-size: 40px;	}
+	.page-principal .contraste-b	{ font-size: 40px;	}
 }
 /*=====================================================================*/
 /*=========================== page-integrantes ========================*/
@@ -229,24 +234,15 @@ i.facebook:hover{
 .page-integrantes .row{ padding: 0px; margin: 0px}
 .page-integrantes .contraste-b{ 
 	font-size: 70px;
-	color: white;
 	text-align: left;
-	font-family: Roboto Black;
-	background-color: #8f3e3e;
 	padding-left: 3%;
 	margin-bottom:0px; 
-	margin-top: 0px;
 }
 .page-integrantes .contraste-a{ 
 	font-size: 80px;
-	color: white;
 	text-align: left;
-	font-family: Roboto Black;
-	background-color: #8f3e3e;
 	padding-left: 3%;
 	margin: 0px;
-	margin-left: 0px;
-	margin-top: 0px;
 }
 img.desaturate { 
 	-webkit-filter: grayscale(30%)  invert(.2);
@@ -303,7 +299,7 @@ img.desaturate {
 	width: 100%;
 	height: 20%;
 	background: #8f3e3e;
-	font-family: Roboto Black;
+	font-weight: 900;
 	color: #fff;
 	letter-spacing: 0.4px;
 	margin-top: 80%;
