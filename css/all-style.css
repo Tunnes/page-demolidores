@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900,300);
 
 *{	
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Roboto'; 
 }
 
 header{
@@ -34,11 +34,11 @@ footer p{
 .navbar-brand{ 	
 	font-weight: 800;
 }
-/*=============================== Icones ==============================*/
-/*=====================================================================*/
 .navbar-right{
 	margin-right: 4px;
 }
+/*=============================== Icones ==============================*/
+/*=====================================================================*/
 .icones{
  margin-top: 14%;
 }
