@@ -13,10 +13,12 @@ footer{
 	background-color: #101010;
 	padding: 30px;
 	margin-top:50px;
+	color:#444;
 }
 footer p{
 	font-size:12px;
 	text-align: justify;
+
 }
 .contraste{
 	color: white;
@@ -36,9 +38,21 @@ footer p{
 }
 .navbar-right{
 	margin-right: 4px;
+
 }
 /*=============================== Icones ==============================*/
 /*=====================================================================*/
+.modal-header{
+	background-color: #8f3e3e;
+	color: white;
+	border-top-right-radius: 4.8px;
+	border-top-left-radius: 4.8px;
+	text-align: center;
+}
+.modal .btn{
+	background-color: #8f3e3e;
+	color: white;
+}
 .icones{
  margin-top: 14%;
 }
@@ -53,9 +67,12 @@ i.twitter{
 }
 i.facebook{
 	background-position:-35px 0px;
+
 }
 i.login{
 	background-position:-70px 0px;
+	width:58px;
+	margin-left: 50%;
 }
 i.twitter:hover{
 	background-position:0px -35px;
@@ -142,15 +159,27 @@ i.login:hover{
 .page-principal header{
  	overflow-x: hidden; 
  }
- .page-principal header div{	
-	top: 0; left: 0; right: 0; bottom: 0;	  
+.h-background {	
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;	  
 }
 
-.page-principal header video{ 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%;
+.h-video{ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+@media (min-aspect-ratio: 16/9){
+  .h-video{ height: 300%; top: -100%;}
+}
+@media (max-aspect-ratio: 16/9) {
+  .h-video{ width: 300%; left: -100%;}
 }
 
 .h-mensagem{	
@@ -193,7 +222,7 @@ i.login:hover{
 .page-principal .contraste-b{
 	font-size: 40px;
 	text-align: center;
-	padding-right: 7%;
+	padding-right: 0px;
 }
 .page-principal p{	
 	text-align: justify;
@@ -201,14 +230,10 @@ i.login:hover{
 }
 .page-principal body{ 
 	overflow-x: hidden;}
+	
 
 /*=====================================================================*/
-@media (min-aspect-ratio: 16/9){
-  .page-principal header video { height: 300%; top: -100%;}
-}
-@media (max-aspect-ratio: 16/9) {
-  .page-principal header video { width: 300%; left: -100%;}
-}
+
 @media (max-width: 768px) {	
  	.page-principal header div h1 	{ font-size: 57px; 	}
  	.page-principal header div h2 	{ font-size: 25px; 	}
