@@ -2,9 +2,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,900,300);
 
 *{	
-	font-family: 'Roboto', sans-serif; 
+	font-family: 'Roboto'; 
 }
-
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
 header{
  	margin-top: 30px;
  	margin-bottom: 20px;
@@ -13,10 +17,12 @@ footer{
 	background-color: #101010;
 	padding: 30px;
 	margin-top:50px;
+	color:#444;
 }
 footer p{
 	font-size:12px;
 	text-align: justify;
+
 }
 .contraste{
 	color: white;
@@ -24,20 +30,98 @@ footer p{
 	background-color: #8f3e3e;
 	margin-top: 0px;
 }
+
 /*=============================== Nav-In ==============================*/
 .navbar{
  	font-size: 12px;
 	margin-bottom: 10px;
 	border-style: none;
 }
+.navbar-brand{	font-weight: 800;	}
+.navbar-right{	margin-right: 4px;	}
 
-.navbar-brand{ 	
-	font-weight: 800;
+/*============================== Header-In =============================*/
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/header-background-invert.gif) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-filter: invert(.1) contrast(1);
+
 }
+.h-buttom{
+    width: 60px;
+    color: #fff;
+    height: 60px;
+    background: 0 0;
+    margin-top: 15px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    padding: 0px;
+}
+.h-buttom-space{    
+    vertical-align: middle;
+    margin-top: 18px;
+}
+header .glyphicon{  
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
+    line-height: 0.4;
+}
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+	color: white;
+	font-weight: 900;
+}
+
+.text-vertical-center h1 {	font-size: 4.5em; font-weight: 900;	}
+.text-vertical-center h3 {	font-size: 1.8em; font-weight: 900;	}
+
+/*============================== Index-In =============================*/
+.h2-lema-a{ 
+	font-size: 65px;
+	font-weight: 900;
+	margin-bottom: 0px;
+}
+.page-principal .contraste-a{
+	font-size: 55px;
+	text-align: right;
+	padding-right: 7%;
+	margin-bottom: 2%;
+}
+.page-principal .contraste-b{
+	font-size: 40px;
+	text-align: center;
+	padding-right: 0px;
+}
+.page-principal p{	
+	text-align: justify;
+	font-size: 14px;
+}
+.text-center-section{ margin-top: 6%; }
+
 /*=============================== Icones ==============================*/
 /*=====================================================================*/
-.navbar-right{
-	margin-right: 4px;
+.modal-header{
+	background-color: #8f3e3e;
+	color: white;
+	border-top-right-radius: 4.8px;
+	border-top-left-radius: 4.8px;
+	text-align: center;
+}
+.modal .btn{
+	background-color: #8f3e3e;
+	color: white;
 }
 .icones{
  margin-top: 14%;
@@ -53,9 +137,12 @@ i.twitter{
 }
 i.facebook{
 	background-position:-35px 0px;
+
 }
 i.login{
 	background-position:-70px 0px;
+	width:58px;
+	margin-left: 50%;
 }
 i.twitter:hover{
 	background-position:0px -35px;
@@ -68,6 +155,20 @@ i.login:hover{
 }
 /*=============================== Login ===============================*/
 /*=====================================================================*/
+
+
+
+
+/*============================== Principal ============================*/
+/*=====================================================================*/
+
+
+/*=====================================================================*/
+
+	
+
+/*=====================================================================*/
+
 
 /*========================= Publicações-Eventos =======================*/
 /*=====================================================================*/
@@ -122,93 +223,7 @@ i.login:hover{
 	border-width: 1.5px;
 }
 /*=====================================================================*/
-/*============================== Principal ============================*/
-/*=====================================================================*/
 
-.page-principal header .glyphicon{	
-	margin: 0 auto;
-	display: block;
-	font-size: 20px;
-	line-height: 0.4;
-}
-.page-principal header div h2{
-	font-weight: 900;
-}
-.page-principal header div h1{ 
-	font-size: 90px; 
-	font-weight: 900;	
-}
-
-.page-principal header{
- 	overflow-x: hidden; 
- }
- .page-principal header div{	
-	top: 0; left: 0; right: 0; bottom: 0;	  
-}
-
-.page-principal header video{ 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%;
-}
-
-.h-mensagem{	
-	z-index: +10;
-	color: white;
-	margin-top: 15%;
-	position: absolute;
-	text-align: center;
-	font-weight: 900;
-}
-.h-buttom{
-   	width: 60px;
-    color: #fff;
-    height: 60px;
-    background: 0 0;
-    margin-top: 15px;
-    border-radius: 100%;
-    border: 2px solid #fff;
-	padding: 0px;
-}
-.h-buttom-space{	
-	vertical-align: middle;
-	margin-top: 18px;
-}
-/*=====================================================================*/
-.h2-lema-a{ 
-	font-size: 65px;
-	font-weight: 900;
-	margin-bottom: 0px;
-}
- .h2-lema-a < p{ 
-	font-size: 25px;
-}
-.page-principal .contraste-a{
-	font-size: 55px;
-	text-align: right;
-	padding-right: 7%;
-	margin-bottom: 2%;
-}
-.page-principal .contraste-b{
-	font-size: 40px;
-	text-align: center;
-	padding-right: 7%;
-}
-.page-principal p{	
-	text-align: justify;
-	font-size: 14px;
-}
-.page-principal body{ 
-	overflow-x: hidden;}
-
-/*=====================================================================*/
-@media (min-aspect-ratio: 16/9){
-  .page-principal header video { height: 300%; top: -100%;}
-}
-@media (max-aspect-ratio: 16/9) {
-  .page-principal header video { width: 300%; left: -100%;}
-}
 @media (max-width: 768px) {	
  	.page-principal header div h1 	{ font-size: 57px; 	}
  	.page-principal header div h2 	{ font-size: 25px; 	}
@@ -306,3 +321,7 @@ img.desaturate {
 	text-align: center;
 	padding: 8% 20px;
 }
+
+
+
+
