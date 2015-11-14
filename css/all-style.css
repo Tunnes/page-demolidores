@@ -40,6 +40,35 @@ footer p{
 .navbar-brand{	font-weight: 800;	}
 .navbar-right{	margin-right: 4px;	}
 
+/*================================ Login ===============================*/
+.modal-header{
+	background-color: #8f3e3e;
+	color: white;
+	border-top-right-radius: 4.8px;
+	border-top-left-radius: 4.8px;
+	text-align: center;
+}
+.modal .btn{	background-color: #8f3e3e;	color: white;	}
+
+/*=============================== Icones ==============================*/
+.icones{ margin-top: 14%;}
+.icones i{
+	width:30px;
+	height:30px;
+	background:url('../img/img-sprite.png') no-repeat 0px 0px;
+	display:inline-block;
+}
+i.login{
+	background-position:-70px 0px;
+	width:58px;
+	margin-left: 50%;
+}
+i.twitter 			{	background-position:0px 0px;		}
+i.facebook 			{	background-position:-35px 0px;		}
+i.login:hover 		{	background-position:-70px -35px;	}
+i.twitter:hover 	{	background-position:0px -35px;		}
+i.facebook:hover 	{	background-position:-35px -35px;	}
+
 /*============================== Header-In =============================*/
 .header {
     display: table;
@@ -110,65 +139,24 @@ header .glyphicon{
 }
 .text-center-section{ margin-top: 6%; }
 
-/*=============================== Icones ==============================*/
-/*=====================================================================*/
-.modal-header{
-	background-color: #8f3e3e;
-	color: white;
-	border-top-right-radius: 4.8px;
-	border-top-left-radius: 4.8px;
-	text-align: center;
-}
-.modal .btn{
-	background-color: #8f3e3e;
-	color: white;
-}
-.icones{
- margin-top: 14%;
-}
-.icones i{
-	width:30px;
-	height:30px;
-	background:url('../img/img-sprite.png') no-repeat 0px 0px;
-	display:inline-block;
-}
-i.twitter{
-	background-position:0px 0px;
-}
-i.facebook{
-	background-position:-35px 0px;
-
-}
-i.login{
-	background-position:-70px 0px;
-	width:58px;
-	margin-left: 50%;
-}
-i.twitter:hover{
-	background-position:0px -35px;
-}
-i.facebook:hover{
-	background-position:-35px -35px;
-}
-i.login:hover{
-	background-position:-70px -35px;
-}
-/*=============================== Login ===============================*/
-/*=====================================================================*/
-
-
-
-
-/*============================== Principal ============================*/
-/*=====================================================================*/
-
-
-/*=====================================================================*/
-
+/*Eddie-Ride*/
+.bg-primary 	{ background-color:  #8f3e3e; height: 200px; padding-top: 1%;}
+.eddie-ride p 	{	 margin-bottom: 20px;	}
+.eddie-ride .h2-lema-a{ }
+.jogar{
+	font-size: 125px; 
+	font-weight: 800; 
+	color:white;
 	
-
+}
+.jogar:hover{
+	color:#333;
+	
+}
+a .jogar{
+	text-decoration: 
+} 
 /*=====================================================================*/
-
 
 /*========================= Publicações-Eventos =======================*/
 /*=====================================================================*/
@@ -321,7 +309,5 @@ img.desaturate {
 	text-align: center;
 	padding: 8% 20px;
 }
-
-
 
 
