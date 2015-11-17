@@ -1,3 +1,20 @@
+$(document).ready(function(){{
+		
+		var html = ''; 
+
+		for (i = 1; i < 147; ++i) {
+		html += '<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">';
+		html += '<img class="img-responsive" src="img/galeria/pic'+i+'.jpg">';
+		html += '</li>';
+		}
+		
+		$('#mama').html();
+			$('#mama').html(html);
+
+   };	
+})
+
+//============================================================================//
 $(document).ready(function(){        
 	$('li img').on('click',function(){
 		var src = $(this).attr('src');
@@ -8,24 +25,21 @@ $(document).ready(function(){
 		
 		var html = '';
 		html += img;                
-		html += '<div style="height:25px;clear:both;display:block;">';
-		html += '<a class="controls next" href="'+ (index+2) + '">next &raquo;</a>';
-		html += '<a class="controls previous" href="' + (index) + '">&laquo; prev</a>';
+		html += '<div style="height:42px;clear:both;display:block;">';
+		html += '<a class="controls next" href="'+ (index+2) + '">PRÓXIMO</a>';
+		html += '<a class="controls previous" href="' + (index) + '">ANTERIOR</a>';
 		html += '</div>';
 		
-		$('#myModal').modal();
-		$('#myModal').on('shown.bs.modal', function(){
-			$('#myModal .modal-body').html(html);
+		$('#myGaleria').modal();
+		$('#myGaleria').on('shown.bs.modal', function(){
+			$('#myGaleria .modal-body').html(html);
 			//new code
 			$('a.controls').trigger('click');
 		})
-		$('#myModal').on('hidden.bs.modal', function(){
-			$('#myModal .modal-body').html('');
+		$('#myGaleria').on('hidden.bs.modal', function(){
+			$('#myGaleria .modal-body').html('');
 		});
-		
-		
-		
-		
+
    });	
 })
         

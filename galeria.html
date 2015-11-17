@@ -2,121 +2,96 @@
 <html lang="pt-BR">
 <head>
 
-	<title>Demolidores Mc</title>
-
-	<!--Base de declaração meta-tags -->
 	<meta charset="UTF-8"/>
 	<meta name="description" content="Demolidores Mc"/>
+	<title>Galeria</title>
+	
+	<!-- Importando bibliotecas MaxCDN Bootstrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-	<!-- Base de declaração de bibliotecas -->
-	<script src="js/jquery-1.11.3.min.js"></script>
-
-	<!--Base de declaração de componentes css do Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css"/>		
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>	
 
 	<!--Base de declaração de scrits desenvolvidos-->
 	<script src="js/photo-gallery.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style-galeria.css">
+
+	<!-- Importando folha css externa-->
+	<link rel="stylesheet" href="css/all-style.css">
 	
 </head>
-
-<body>
-
-	<!-- Navbar fixo no topo da pagina e com uma redundancia gritante que me irrita-->
-	<nav class=" navbar navbar-inverse navbar-fixed-top" >
-		<div class="container-fluid active">
-			<div class="navbar-header ">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span> 
-      			</button>
-				<a class="navbar-brand " href="#">Demolidores</a>
-			</div>
-			<div class="collapse navbar-collapse" >
-				<ul class="nav navbar-nav ">
-				    <li class="active"><a href="#">Principal</a></li>
-				    <li><a href="#">Eventos</a></li>
-				    <li><a href="#">Galeria</a></li>
-				    <li><a href="#">Nossa História</a></li>
-				    <li><a href="#">Localização</a></li>
-				</ul>
+<body class="page-galeria">
+	<!--============================================ Nav-In ============================================-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" >
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#">DEMOLIDORES</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	     	<ul class="nav navbar-nav ">
+		        <li><a href="principal.html">Principal</a></li>
+				<li><a href="eventos.html">Eventos</a></li>
+				<li class="active"><a 	href="galeria.html">Galeria</a></li>
+				<li><a  href="membros.html">Membros</a></li>
+				<li><a  href="historia.html">Nossa História</a></li>
+				<li><a  href="contato.html">Contato</a></li>
+	    	</ul>
+	    </div>
+	  </div>
+	</nav>
+	<!--=========================================== Login-In ===========================================-->
+	<div id="myModal" class="modal fade" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">CONFIRMAR ACESSO</h4>
+			    </div>
+			    <div class="modal-body" method="post" action='vai pro servidor haskell.. seila' name="login_form">
+					<form role="form">
+					  	<div class="form-group">
+						    <label for="email 	">Login</label>
+						    <input type="email" id="email" class="form-control" required>
+					  	</div>
+					  	<div class="form-group">
+						    <label for="pwd">Senha</label>
+						    <input type="password" id="passaword" class="form-control" required>
+					  	</div>
+					  	<button type="submit" class="btn btn-default">Confirmar</button>
+					   	<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					</form>
+			    </div>
+	    	</div>
+  		</div>
+	</div>
+	<!--=========================================== Header-In ==============================================-->
+	<header class="other-header jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9"> 
+                    <h2 class="h2-lema-a">GALERIA DE IMAGENS</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+	<!--=========================================== Main-In ================================================-->
+	<main class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h3  class="contraste contraste-a">PRINCIPAIS EVENTOS</h3>
 			</div>
 		</div>
-	</nav>
-	<!-- Navbar fixo no topo da pagina e com uma redundancia gritante que me irrita-->
-
-	<!-- Header demolidores -->
-	<header class=" jumbotron container-fluid">
-			<h3>Motoclube</h3><h1>Demolidores</h1>
-	</header>
-	<!-- Header demolidores -->
-
-	<!--Main com as informações principais sobre ultimas atividades do motoclube-->
-
-
-	<div class="container">       
-	    <ul class="row">
-	    	<li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/1.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/2.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/3.jpg">
-	        </li>
-	       
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/5.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/6.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/7.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/8.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/9.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/10.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-1">
-	            <img class="img-responsive" src="img/viag/11.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-	            <img class="img-responsive" src="img/viag/12.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-	            <img class="img-responsive" src="img/viag/13.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-	            <img class="img-responsive" src="img/viag/14.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-	            <img class="img-responsive" src="img/viag/15.jpg">
-	        </li>
-	        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-	            <img class="img-responsive" src="img/viag/16.jpg">
-	        </li>
-	          <li class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-	            <img class="img-responsive" src="img/viag/16.jpg">
-	        </li>
-        </ul>             
-    </div>
-    
-     
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="row">       
+		    <ul id="mama" class="row">
+	        </ul>
+	    </div>             
+    </main>
+    <!--========================================= myGaleria-In =============================================-->
+    <div class="modal fade" id="myGaleria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">         
           <div class="modal-body">                
@@ -124,42 +99,39 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-	<!--Main com as informações principais sobre ultimas atividades do motoclube-->
-	<footer class=" container-fluid espaco-sup">
+	<!--========================================== Footer-In ===============================================-->
+	<footer class=" container-fluid">
 		<div class="footer">
 			<div class="footer-top">
 				<div class="container">
 					<div class="col-md-4 bloco-footer">
 						<h5>SOBRE NÓS</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam deleniti illo recusandae, nostrum harum molestiae eligendi ab, atque quasi similique dolorem architecto ea. Eos repellendus reprehenderit dicta? Voluptatum, quisquam, suscipit.</p>
+						<p>A associação de motociclistas de São Vicente, denominada moto clube Demolidores, temos como objetivo harmonizar, organizar, divulgar e aproximar culturamente motociclistas e interessado.</p>
 					</div>
-					<div class="col-md-5 bloco-footer">
+					<div class="col-md-4 bloco-footer">
 						<h5>DESENVOLVIMENTO</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam deleniti illo recusandae, nostrum harum molestiae eligendi ab, atque quasi similique dolorem architecto ea. Eos repellendus reprehenderit dicta? Voluptatum, quisquam, suscipit.</p>
+						<p>Pagina desenvolvida sem fins lucrativos pelo grupo Sudo Inc e doada para o motoclube Demolidores duvidas, sugestões, orçamentos e solicitações diversas entre em contato pelo email contato@sudoinc.com</p>
 					</div>
-					<div class="col-md-3 bloco-footer">
-						<h5>SIGA NOSSA PAGE!</h5>
-						<p> Fique de olho em nossos eventos, viagens e festas aconpanhe nosso moto clube, curta nossa pagina do FaceBook!</p>
+					<div class="col-md-4 bloco-footer">
+						<h5>SIGA-NOS</h5>
+						<p>Fique de olho em nossos eventos, viagens e festas do nosso moto clube, nos acompanhe no Facebook e Twitter.</p>
+						<div class="icones">
+							<a href="#"><i class="twitter"></i></a>
+							<a href="#"><i class="facebook"></i></a>
+							<a href="#myModal" data-target="#myModal" data-toggle="modal"><i class="login"></i></a>
+						</div>
 					</div>		
 				</div>
-
 			</div>
 			<div class="footer-bottom">
-				<div class="container ">
-					<div class="copyrights">
-						<p>Sudo Inc. &copy; 2015 Todos os direitos reservados | Desenvolvido por <a href="www.sudoinc.com">Sudo Inc</a></p>
+				<div class="container">
+					<div class="row">
+						<div class="copyrights col-md-10">
+							<p>Sudo Inc. &copy; 2015 Todos os direitos reservados | Desenvolvido por <a href="www.sudoinc.com">Sudo Inc</a></p>	
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
 	</footer>
-	<!--h1>Olá mundo</h1-->
-	
 </body>
 </html>

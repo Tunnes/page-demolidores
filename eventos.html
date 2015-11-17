@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	
 	<meta charset="UTF-8"/>
 	<meta name="description" content="Demolidores Mc"/>
 	<title>Eventos</title>
@@ -16,9 +16,8 @@
 	<!-- Importando folha css externa-->
 	<link rel="stylesheet" href="css/all-style.css">
 
-
 </head>
-<body class="page-publicacoes">
+<body class="page-eventos">
 	<!--============================================ Nav-In ============================================-->
 	<nav class="navbar navbar-inverse navbar-fixed-top" >
 	  <div class="container-fluid">
@@ -32,83 +31,78 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	     	<ul class="nav navbar-nav ">
-		        <li class="active"><a href="#">Principal</a></li>
-				<li><a class="" href="#">Eventos</a></li>
-				<li><a class="" href="#">Galeria</a></li>
-				<li><a class="" href="#">Nossa História</a></li>
-				<li><a class="" href="#">Localização</a></li>
-	    	</ul>
-	    	<ul class="nav navbar-nav navbar-right">      	
+		        <li><a href="principal.html">Principal</a></li>
+				<li class="active"><a href="eventos.html">Eventos</a></li>
+				<li><a 	href="galeria.html">Galeria</a></li>
+				<li><a  href="membros.html">Membros</a></li>
+				<li><a  href="historia.html">Nossa História</a></li>
+				<li><a  href="contato.html">Contato</a></li>
 	    	</ul>
 	    </div>
 	  </div>
 	</nav>
-	<!--====================================================================================================-->
+	<!--=========================================== Login-In ===========================================-->
+	<div id="myModal" class="modal fade" role="dialog">
+	  	<div class="modal-dialog">
+		    <div class="modal-content">
+			    <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal">&times;</button>
+			        <h4 class="modal-title">CONFIRMAR ACESSO</h4>
+			    </div>
+			    <div class="modal-body" method="post" action='vai pro servidor haskell.. seila' name="login_form">
+					<form role="form">
+					  	<div class="form-group">
+						    <label for="email 	">Login</label>
+						    <input type="email" id="email" class="form-control" required>
+					  	</div>
+					  	<div class="form-group">
+						    <label for="pwd">Senha</label>
+						    <input type="password" id="passaword" class="form-control" required>
+					  	</div>
+					  	<button type="submit" class="btn btn-default">Confirmar</button>
+					   	<button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+					</form>
+			    </div>
+	    	</div>
+  		</div>
+	</div>
 	<!--=========================================== Header-In ==============================================-->
-
-	<!--====================================================================================================-->
+	<header class="other-header jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9"> 
+                    <h2 class="h2-lema-a">PUBLICAÇÕES E EVENTOS</h2>
+                    <br>
+                    <!--p>Realizamos diversos eventos ao decorrer do ano, sendo eles abertos aos mais variados publicos e com as mais diferentes finalidades acompanhe abaixo datas e informaçoes sobre nossos eventos.</p-->
+                </div>
+            </div>
+        </div>
+    </header>
 	<!--=========================================== Main-In ================================================-->
-	<main class="container">
-	<div class= "row">
-		<div class="col-lg-12">
-			<h1 class="contraste">PUBLICAÇÕES E EVENTOS</h1>
-		</div>
-	</div>
 	<hr class="featurette-divider">
-	<div class="row">
-		<div class="col-xm-12 col-sm-4 col-md-4 col-lg-4">
-			<div class=" thumbnail post">
-				<img src="img/show.png" class="img-responsive img-rounded">
-				<div class = "caption">
-			        <div class="h-event">
-						<h3 class="p-name">Lorem Band</h3>
-						<p>
-							<time class="dt-start" datetime="2013-06-30 12:00">Dia 30 de Junho 2013, 12:00</time>  
-							<time class="dt-end" datetime="2013-06-30 18:00"> ás 18:00</time>
-							<span class="p-location">São Vicente - SP</span>
-					 	</p>
-						<p class="p-summary">Show do Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, ipsa, veritatis ratione asperiores, eum iure blanditiis laudantium itaque laboriosam corrupti inventore explicabo fuga adipisci quaerat ad amet nobis beatae dolorem.</p>
-					</div>    
-	      		</div>
-	      	</div>	
+	<main class="container">
+		<div class="row">
+			<div class="col-lg-12">
+			<h3  class="contraste contraste-a">RECENTES</h3>
+			</div>
 		</div>
-		<div class="col-xm-12 col-sm-4 col-md-4 col-lg-4">
-			<div class=" thumbnail post">
-				<img src="img/show.png" class="img-responsive img-rounded">
-				<div class = "caption">
-			        <div class="h-event">
-						<h3 class="p-name">Lorem Band</h3>
-
-						<p>
-							<time class="dt-start" datetime="2013-06-30 12:00">Dia 30/06/2013 dás 12h00 ás 18:00</time>  
-							<time class="dt-end" datetime="2013-06-30 18:00"></time>
-							<span class="p-location">São Vicente - SP</span>
-					 	</p>
-						<p class="p-summary">Show do Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, ipsa, veritatis ratione asperiores, eum iure blanditiis laudantium itaque laboriosam corrupti inventore explicabo fuga adipisci quaerat ad amet nobis beatae dolorem.</p>
-					</div>    
-	      		</div>
-	      	</div>	
-		</div>
-		<div class="col-xm-12 col-sm-4 col-md-4 col-lg-4">
-			<div class=" thumbnail post">
-				<img src="img/show.png" class="img-responsive img-rounded">
-				<div class = "caption">
-			        <div class="h-event">
-						<h3 class="p-name">Lorem Band</h3>
-						<p>
-							<time class="dt-start" datetime="2013-06-30 12:00">Dia 30 de Junho 2013, 12:00</time>  
-							<time class="dt-end" datetime="2013-06-30 18:00"> ás 18:00</time>
-							<span class="p-location">São Vicente - SP</span>
-					 	</p>
-						<p class="p-summary">Show do Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, ipsa, veritatis ratione asperiores, eum iure blanditiis laudantium itaque laboriosam corrupti inventore explicabo fuga adipisci quaerat ad amet nobis beatae dolorem.</p>
-					</div>    
-	      		</div>
-	      	</div>	
-		</div>
-	</div>
-
+		<div class="row thumbnail post">
+			<div class="conteudo col-xs-12 col-sm-6 col-md-7 col-lg-9">
+				<div class="h-event">
+					<h3 class="p-name">Lorem Band</h3>
+					<p>
+						<time class="dt-start" datetime="2013-06-30 12:00">Dia 30 de Junho 2013, 12:00</time>  
+						<time class="dt-end" datetime="2013-06-30 18:00"> ás 18:00</time>
+						<span class="p-location">São Vicente - SP</span>
+					</p>
+					<p class="p-summary">Show do Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, ipsa, veritatis ratione asperiores, eum iure blanditiis laudantium itaque laboriosam corrupti inventore explicabo fuga adipisci quaerat ad amet nobis beatae dolorem, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium illum eum, temporibus blanditiis alias facilis ducimus ullam, voluptatum repellendus perferendis nihil. Consequuntur, maiores! Unde corporis, harum officia, dolorem dolorum voluptates.</p>
+				</div>   
+			</div>
+			<div class="col-sm-6 col-md-5 col-lg-3">
+				<img src="img/show.png" class="img-responsive img-circle">
+			</div>
+		</div>	
 	</main>
-	<!--====================================================================================================-->
 	<!--========================================== Footer-In ===============================================-->
 	<footer class=" container-fluid">
 		<div class="footer">
@@ -116,32 +110,32 @@
 				<div class="container">
 					<div class="col-md-4 bloco-footer">
 						<h5>SOBRE NÓS</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam deleniti illo recusandae, nostrum harum molestiae eligendi ab, atque quasi similique dolorem architecto ea. Eos repellendus reprehenderit dicta? Voluptatum, quisquam, suscipit.</p>
+						<p>A associação de motociclistas de São Vicente, denominada moto clube Demolidores, temos como objetivo harmonizar, organizar, divulgar e aproximar culturamente motociclistas e interessado.</p>
 					</div>
-					<div class="col-md-5 bloco-footer">
+					<div class="col-md-4 bloco-footer">
 						<h5>DESENVOLVIMENTO</h5>
 						<p>Pagina desenvolvida sem fins lucrativos pelo grupo Sudo Inc e doada para o motoclube Demolidores duvidas, sugestões, orçamentos e solicitações diversas entre em contato pelo email contato@sudoinc.com</p>
 					</div>
-					<div class="col-md-3 bloco-footer">
-						<h5>SIGA NOSSA PAGE!</h5>
-						<p>
-							Fique de olho em nossos eventos, viagens e festas aconpanhe nosso moto clube, curta nossa pagina do FaceBook!
-						</p>
+					<div class="col-md-4 bloco-footer">
+						<h5>SIGA-NOS</h5>
+						<p>Fique de olho em nossos eventos, viagens e festas do nosso moto clube, nos acompanhe no Facebook e Twitter.</p>
 						<div class="icones">
 							<a href="#"><i class="twitter"></i></a>
 							<a href="#"><i class="facebook"></i></a>
+							<a href="#myModal" data-target="#myModal" data-toggle="modal"><i class="login"></i></a>
 						</div>
 					</div>		
 				</div>
 			</div>
 			<div class="footer-bottom">
-				<div class="container ">
-					<div class="copyrights col-md-12">
-						<p>Sudo Inc. &copy; 2015 Todos os direitos reservados | Desenvolvido por <a href="www.sudoinc.com">Sudo Inc</a></p>
+				<div class="container">
+					<div class="row">
+						<div class="copyrights col-md-10">
+							<p>Sudo Inc. &copy; 2015 Todos os direitos reservados | Desenvolvido por <a href="www.sudoinc.com">Sudo Inc</a></p>	
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 	</footer>
 </body>
 </html>

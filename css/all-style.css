@@ -3,11 +3,13 @@
 
 *{	
 	font-family: 'Roboto'; 
+
 }
 html,
 body {
     width: 100%;
     height: 100%;
+    word-wrap: normal;
 }
 header{
  	margin-top: 30px;
@@ -19,10 +21,13 @@ footer{
 	margin-top:50px;
 	color:#444;
 }
-footer p{
-	font-size:12px;
+footer p {
+	font-size:12px !important;
 	text-align: justify;
 
+}
+main{
+	margin-top: 0px;
 }
 .contraste{
 	color: white;
@@ -30,7 +35,19 @@ footer p{
 	background-color: #8f3e3e;
 	margin-top: 0px;
 }
-
+.other-header{
+	padding: 4%;
+    width: 100%;
+    background: url(../img/header-background-invert.gif) no-repeat center center scroll;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    -webkit-filter: invert(.1) contrast(1);
+    color: white;
+}
+.other-header h2 { font-size: 70px; 	}
 /*=============================== Nav-In ==============================*/
 .navbar{
  	font-size: 12px;
@@ -60,11 +77,13 @@ footer p{
 }
 i.login{
 	background-position:-70px 0px;
-	width:58px;
-	margin-left: 50%;
+	margin-right: 1px;
 }
-i.twitter 			{	background-position:0px 0px;		}
-i.facebook 			{	background-position:-35px 0px;		}
+i.twitter 			{	
+	background-position:0px 0px;
+}
+i.facebook 			{	background-position:-35px 0px; 	
+}
 i.login:hover 		{	background-position:-70px -35px;	}
 i.twitter:hover 	{	background-position:0px -35px;		}
 i.facebook:hover 	{	background-position:-35px -35px;	}
@@ -137,9 +156,10 @@ header .glyphicon{
 	text-align: justify;
 	font-size: 14px;
 }
+
 .text-center-section{ margin-top: 6%; }
 
-/*Eddie-Ride*/
+/*Extral-In
 .bg-primary 	{ background-color:  #8f3e3e; height: 200px; padding-top: 1%;}
 .eddie-ride p 	{	 margin-bottom: 20px;	}
 .eddie-ride .h2-lema-a{ }
@@ -156,59 +176,35 @@ header .glyphicon{
 a .jogar{
 	text-decoration: 
 } 
+#MyDiv	{ overflow-x: hidden; 	}
+#canvas	{ overflow-x: hidden;	}
+*/
+
 /*=====================================================================*/
 
-/*========================= Publicações-Eventos =======================*/
-/*=====================================================================*/
-.page-publicacoes header{
-	margin-bottom: 0px;
-	padding-top: 8%;
-    width: 100%;
-    height: 400px;
-    background-image: url('../img/header.png');
-    background-size: 100% 100%;
-}
-.page-publicacoes .h-mensgem{
-	color: white;
-	margin-top: 3% auto;
-	text-align: center;
-	font-weight: 900;
-}
-.page-publicacoes header h2{ font-size: 70px;}
-.page-publicacoes header h3{ font-size: 30px;}
+/*================================= Eventos ===========================*/
+.page-eventos header p  { font-size: 15px; 	}
+.page-eventos main 		{ margin-top: 4%; 	}
+/*================================= Post ==============================*/
 
-@media (max-width: 768px){
-	.page-publicacoes header { background-size:cover;}
-	.page-publicacoes header h2{ font-size: 55px;}
-	.page-publicacoes header h3{ font-size: 30px;}
-}
-/*=====================================================================*/
-.page-publicacoes main{
-	margin-top: 5%;
-}
-.page-publicacoes main div div h1{
+.post h3{
 	font-size: 40px;
-	text-align: center;
-	padding: 1%;
-}
-/*=====================================================================*/
-.post span{	
-	display: block;
+	margin-top: 0px;
+	font-weight: 900;
 }
 .post time + span, time{
 	font-size: 12px;
 	text-align: left;
 }
-.post img{
-	padding:2%;
-	border-radius: 3.5%;
-}
-.post h3{
-	margin-top: 0px;
-	font-weight: 900;
-}
-.page-publicacoes .thumbnail{
-	border-width: 1.5px;
+.conteudo 	{	margin-top: 8px;	}
+.post 		{	padding: 15px;		}
+.post span 	{	display: block;		}
+.p-summary	{	text-align: justify;}
+
+@media (max-width: 768px){
+	.page-eventos header { background-size:cover;}
+	.page-eventos header h2{ font-size: 55px;}
+	.page-eventos header h3{ font-size: 30px;}
 }
 /*=====================================================================*/
 
@@ -225,24 +221,24 @@ a .jogar{
 	.page-principal .contraste-b	{ font-size: 40px;	}
 }
 /*=====================================================================*/
-/*=========================== page-integrantes ========================*/
+/*=========================== page-membros ========================*/
 /*=====================================================================*/
-.page-integrantes main{
+.page-membros main{
 	margin-top: 8%;
 }
-.page-integrantes main ul li{     
+.page-membros main ul li{     
   list-style:none;            
 }
 .hoverzoom{ margin: 0px; border-radius: 0px;}
-.page-integrantes .row{ padding: 0px; margin: 0px}
-.page-integrantes .contraste-b{ 
-	font-size: 70px;
+.page-membros .row{ padding: 0px; margin: 0px}
+.page-membros .contraste-b{ 
+	font-size: 50px;
 	text-align: left;
 	padding-left: 3%;
 	margin-bottom:0px; 
 }
-.page-integrantes .contraste-a{ 
-	font-size: 80px;
+.page-membros .contraste-a{ 
+	font-size: 60px;
 	text-align: left;
 	padding-left: 3%;
 	margin: 0px;
@@ -251,8 +247,8 @@ img.desaturate {
 	-webkit-filter: grayscale(30%)  invert(.2);
 	filter: grayscale(100%);
 }
-.page-integrantes .col-lg-4, .col-lg-2{padding: 0.5px; margin: 0px;}
-.page-integrantes .col-lg-8, .col-lg-12{padding: 0px; margin: 0px;}
+.page-membros .col-lg-4, .col-lg-2{padding: 0.5px; margin: 0px;}
+.page-membros .col-lg-8, .col-lg-12{padding: 0px; margin: 0px;}
 .hoverzoom{
 	position: relative;
 	width: 350;
@@ -310,4 +306,104 @@ img.desaturate {
 	padding: 8% 20px;
 }
 
+/*================================= Galeria ===========================*/
 
+.page-galeria main 		{ margin-top: 4%; 	}
+
+.page-galeria main ul{         
+  padding:0 0 0 0;
+  margin:0 0 0 0;
+}
+.page-galeria main ul li{     
+  list-style:none;
+  margin-bottom:0px;           
+}
+.page-galeria main ul li img{
+  cursor: pointer;
+}
+/*=====================================================================*/
+
+#myGaleria .modal-body{
+    padding:1px !important;
+}
+#myGaleria .modal-content{
+	border-radius:0;
+}
+#myGaleria .modal-dialog img {
+   	text-align:center;
+    margin:0 auto;
+    width: 100%;
+    height:auto;
+}
+#myGaleria .controls{
+	padding: 3px;          
+	margin-top: 1px;
+	margin-bottom: 3px;
+    display:block;
+    font-size:25px;
+    font-weight:bold; 
+    text-decoration: none;         
+}
+#myGaleria .controls:hover{
+	color:#333;
+	text-decoration: none;
+}
+.next{
+	color: white;
+	background-color: #8f3e3e;
+    float:right;
+    text-align:right;
+}
+.previous{
+	color: white;
+	background-color: #8f3e3e;
+    float:left;
+    text-align:left;	
+}
+.modal-dialog{
+  max-width:500px;
+  padding-top: 90px;
+}
+
+
+@media screen and (min-width: 768px){
+  .modal-dialog {
+      width:500px;
+      padding-top: 90px;
+  }          
+}
+@media screen and (max-width:1500px){
+  #ads {
+      display:none;
+  }
+}
+/*================================= Membros ===========================*/
+
+
+/*================================= historia ===========================*/
+.page-historia main p{
+	text-align: justify;
+}
+.page-historia main h2{
+	margin-bottom: 3%;
+	padding: 5px;
+
+}
+
+textarea { resize: none }
+
+.page-galeria .contraste-a{ 
+	font-size: 60px;
+	text-align: left;
+	padding-left: 3%;
+	margin: 0px;
+	margin-top: 5%;
+}
+.page-eventos .contraste-a{ 
+	font-size: 60px;
+	text-align: left;
+	padding-left: 3%;
+	margin: 0px;
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
