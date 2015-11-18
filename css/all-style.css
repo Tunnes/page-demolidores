@@ -3,13 +3,15 @@
 
 *{	
 	font-family: 'Roboto'; 
-
+	
 }
 html,
 body {
     width: 100%;
     height: 100%;
     word-wrap: normal;
+
+   
 }
 header{
  	margin-top: 30px;
@@ -20,14 +22,22 @@ footer{
 	padding: 30px;
 	margin-top:50px;
 	color:#444;
+	-webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
 }
 footer p {
 	font-size:12px !important;
 	text-align: justify;
 
+
 }
 main{
 	margin-top: 0px;
+
 }
 .contraste{
 	color: white;
@@ -185,6 +195,15 @@ a .jogar{
 /*================================= Eventos ===========================*/
 .page-eventos header p  { font-size: 15px; 	}
 .page-eventos main 		{ margin-top: 4%; 	}
+
+.page-eventos .contraste-a{ 
+	font-size: 60px;
+	text-align: left;
+	padding-left: 3%;
+	margin: 0px;
+	margin-top: 3%;
+	margin-bottom: 1%;
+}
 /*================================= Post ==============================*/
 
 .post h3{
@@ -221,7 +240,7 @@ a .jogar{
 	.page-principal .contraste-b	{ font-size: 40px;	}
 }
 /*=====================================================================*/
-/*=========================== page-membros ========================*/
+/*============================== Membros ==============================*/
 /*=====================================================================*/
 .page-membros main{
 	margin-top: 8%;
@@ -321,7 +340,14 @@ img.desaturate {
 .page-galeria main ul li img{
   cursor: pointer;
 }
-/*=====================================================================*/
+.page-galeria .contraste-a{ 
+	font-size: 60px;
+	text-align: left;
+	padding-left: 3%;
+	margin: 0px;
+	margin-top: 5%;
+}
+
 
 #myGaleria .modal-body{
     padding:1px !important;
@@ -377,10 +403,7 @@ img.desaturate {
       display:none;
   }
 }
-/*================================= Membros ===========================*/
-
-
-/*================================= historia ===========================*/
+/*================================= Historia ===========================*/
 .page-historia main p{
 	text-align: justify;
 }
@@ -389,21 +412,10 @@ img.desaturate {
 	padding: 5px;
 
 }
-
+/*================================= Membros ===========================*/
 textarea { resize: none }
 
-.page-galeria .contraste-a{ 
-	font-size: 60px;
-	text-align: left;
-	padding-left: 3%;
-	margin: 0px;
-	margin-top: 5%;
-}
-.page-eventos .contraste-a{ 
-	font-size: 60px;
-	text-align: left;
-	padding-left: 3%;
-	margin: 0px;
-	margin-top: 3%;
-	margin-bottom: 1%;
+
+canvas{
+	margin-left: 6%;
 }
