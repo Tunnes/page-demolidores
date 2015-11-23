@@ -418,4 +418,5 @@ textarea { resize: none }
 
 canvas{
 	margin-left: 6%;
+	display: none;
 }

@@ -2,7 +2,7 @@ $(document).ready(function () {
 	function filterPath(string) {
 		return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
 	}
-	$('a[href*=#]').each(function () {
+	$('a[href=#weezer], a[href=#bem-vindos]').each(function () {
 		if (filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/, '')) {
 			var $targetId = $(this.hash),
 				$targetAnchor = $('[name=' + this.hash.slice(1) + ']');
