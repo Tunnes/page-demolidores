@@ -1,13 +1,10 @@
 $(document).ready(function(){{
-		
 		var html = ''; 
-
 		for (i = 1; i < 147; ++i) {
-		html += '<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">';
-		html += '<img class="img-responsive" src="img/galeria/pic'+i+'.jpg">';
-		html += '</li>';
+			html += '<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">';
+			html += '<img class="img-responsive" src="img/galeria/pic'+i+'.jpg" alt="foto do evento '+ i +'">';
+			html += '</li>';
 		}
-		
 		$('#mama').html();
 			$('#mama').html(html);
 
